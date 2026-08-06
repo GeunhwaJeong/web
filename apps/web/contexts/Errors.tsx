@@ -1,6 +1,5 @@
 'use client';
 
-import { datadogRum } from '@datadog/browser-rum';
 import { isDevelopment } from 'apps/web/src/constants';
 import { logger } from 'apps/web/src/utils/logger';
 import { ReactNode, createContext, useCallback, useContext, useMemo } from 'react';
@@ -50,7 +49,6 @@ export default function ErrorsProvider({ children, context }: ErrorsProviderProp
           message: message,
         });
       }
-      datadogRum.addError(error, { context: fullContext, message: message });
     },
     [fullContext],
   );

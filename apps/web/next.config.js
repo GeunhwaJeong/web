@@ -60,9 +60,6 @@ const isLocalDevelopment = process.env.NODE_ENV === 'development';
 const isE2ETest = process.env.E2E_TEST === 'true';
 const baseXYZDomains = 'https://base.mirror.xyz';
 const greenhouseDomains = 'https://boards.greenhouse.io https://boards-api.greenhouse.io';
-const ccaDomain = 'https://static-assets.coinbase.com/js/cca/v0.0.1.js';
-const ccaLiteDomains = 'https://cca-lite.coinbase.com';
-const sprigDomains = 'https://api.sprig.com https://cdn.sprig.com';
 const walletconnectDomains =
   'https://*.walletconnect.org wss://*.walletconnect.org wss://*.walletconnect.com https://*.walletconnect.com https://explorer-api.walletconnect.com';
 const metamaskDomains =
@@ -75,13 +72,9 @@ const contentSecurityPolicy = {
     "'wasm-unsafe-eval'", // wasm requires 'unsafe-eval'
     isLocalDevelopment ? "'unsafe-eval'" : '',
     baseXYZDomains,
-    ccaDomain,
-    ccaLiteDomains,
     walletconnectDomains,
     'https://fonts.googleapis.com', // OCK styles loads google fonts via CSS
     'https://fonts.gstatic.com/', // OCK styles loads google fonts via CSS
-    'https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com',
-    'https://jsv3.recruitics.com/0778138b-cc59-11ef-a514-fd1759833eec.js', // recruitics job analytics
   ],
   'worker-src': ["'self'", 'blob:'],
   'connect-src': [
@@ -90,10 +83,7 @@ const contentSecurityPolicy = {
     'https://blob.vercel-storage.com', // Vercel File storage
     'https://zku9gdedgba48lmr.public.blob.vercel-storage.com', // Vercel File storage
     walletconnectDomains,
-    sprigDomains,
     greenhouseDomains,
-    ccaLiteDomains,
-    ccaDomain,
     'https://ccip-v2.ens.xyz',
     'https://euc.li',
     'https://arweave.net',
@@ -101,7 +91,6 @@ const contentSecurityPolicy = {
     'https://enhanced-provider.rainbow.me',
     'https://*.coinbase.com',
     'wss://www.walletlink.org/rpc', // coinbase wallet connection
-    'https://analytics-service-dev.cbhq.net',
     'mainnet.base.org',
     'sepolia.base.org',
     'https://cloudflare-eth.com',
@@ -114,10 +103,6 @@ const contentSecurityPolicy = {
     'https://api.guild.xyz/',
     isE2ETest ? 'ws://localhost:8545/' : isLocalDevelopment ? 'ws://localhost:3000/' : '',
     isE2ETest ? 'http://localhost:8545/' : isLocalDevelopment ? 'http://localhost:3000/' : '',
-    'https://flag.lab.amplitude.com/sdk/v2/flags',
-    'https://api.lab.amplitude.com/sdk/v2/vardata',
-    'https://browser-intake-datadoghq.com', // datadog
-    'https://*.datadoghq.com', //datadog
     'https://translate.googleapis.com', // Let user translate our website
     'https://sdk-api.neynar.com/', // Neynar API
     'https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web@0.33.0/dist/dotlottie-player.wasm', // lottie player for profile pages
@@ -129,7 +114,6 @@ const contentSecurityPolicy = {
     'https://eth.merkle.io', // new default viem rpc
     'https://blue-api.morpho.org/graphql', // morpho
     'https://base-sepolia.easscan.org/graphql', // nft
-    'https://*.google-analytics.com',
     'wss://metamask-sdk.api.cx.metamask.io', // MetaMask SDK websocket
     'https://metamask-sdk.api.cx.metamask.io', // MetaMask SDK API
   ],

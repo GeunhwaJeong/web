@@ -7,6 +7,3 @@ export const mainnetLaunchBlogPostURL =
   process.env.MAINNET_LAUNCH_BLOG_POST_URL ?? 'https://base.mirror.xyz/';
 export const mainnetLaunchFlag = process.env.MAINNET_LAUNCH_FLAG ?? 'false';
 export const isDevelopment = nodeEnv === 'development';
-export const ampDeploymentKey = isDevelopment
-  ? 'client-Wvf63OdaukDZyCBtwgbOvHgGTuASBZFG'
-  : 'client-agFoQg5AOvZ2ZiOChny9RrGk21jG3VrH';

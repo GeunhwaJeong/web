@@ -1,15 +1,10 @@
 // lib/logger.ts
 
-import type { Tracer } from 'dd-trace';
-import { bugsnagNotify } from 'apps/web/src/utils/bugsnag';
-
 type LogLevel = 'info' | 'warn' | 'error' | 'debug' | 'verbose';
 
 type LoggerOptions = {
   service: string;
 };
-
-let ddTrace: Tracer | undefined;
 
 class CustomLogger {
   private static instance: CustomLogger;
@@ -28,24 +23,9 @@ class CustomLogger {
   }
 
   private log(level: LogLevel, message: string, meta?: Record<string, unknown>) {
-    let traceId: string | undefined;
-    let spanId: string | undefined;
-
-    //TODO: initialize ddTrace through dd-tracer
-    if (ddTrace) {
-      // Access trace information server-side
-      const currentSpan = ddTrace.scope().active();
-      traceId = currentSpan?.context().toTraceId() ?? undefined;
-      spanId = currentSpan?.context().toSpanId() ?? undefined;
-    }
-
     const logEntry = JSON.stringify({
       message: `[${this.service}] ${message}`,
       level,
-      dd: {
-        trace_id: traceId,
-        span_id: spanId,
-      },
       ...meta,
     });
 
@@ -60,12 +40,6 @@ class CustomLogger {
         break;
       case 'error':
         console.error(logEntry);
-        // Skip Bugsnag during E2E tests
-        if (process.env.E2E_TEST !== 'true') {
-          bugsnagNotify(message, (e) => e.addMetadata('baseweb', { meta })).catch((e) =>
-            console.error('Error reporting to Bugsnag', e),
-          );
-        }
         break;
       default:
         console.log(logEntry);
