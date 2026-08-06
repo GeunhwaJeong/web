@@ -1,4 +1,3 @@
-import JobsScript from 'apps/web/app/(base-org)/jobs/JobsScript';
 import ErrorsProvider from 'apps/web/contexts/Errors';
 import Container from 'apps/web/src/components/base-org/Container';
 import { JobType } from 'apps/web/src/components/Jobs/Job';
@@ -40,7 +39,6 @@ export default async function Jobs() {
           <WebGLCanvas />
         </div>
       </div>
-      <JobsScript />
       <Container className="lg:pt-0">
         <div className="flex flex-col col-span-full gap-12">
           <Hero />

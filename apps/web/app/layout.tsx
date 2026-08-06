@@ -3,18 +3,7 @@ import './global.css';
 import AppProviders from 'apps/web/app/AppProviders';
 
 import localFont from 'next/font/local';
-import DatadogInit from 'apps/web/app/datadog';
 import { Inter, Inter_Tight, Roboto_Mono } from 'next/font/google';
-
-const GOOGLE_ANALYTICS_ID = 'G-D1QGEV3B07';
-const googleAnalyticsInitScriptContent = {
-  __html: `
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', '${GOOGLE_ANALYTICS_ID}');
-  `,
-};
 
 const coinbaseDisplay = localFont({
   src: [
@@ -216,27 +205,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="mask-icon" href="/document/safari-pinned-tab.svg" color="#0052ff" />
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="theme-color" content="#ffffff" />
-        <meta
-          name="google-site-verification"
-          content="lqwNRCxYlFLIcX9EiKAvE4k4ZT8JGpdWgehEIPA7y1Y"
-        />
-        <script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`}
-          async
-          defer
-        />
-        <script
-          id="gtag-init"
-          // eslint-disable-next-line react/no-danger -- necessary for google analytics
-          dangerouslySetInnerHTML={googleAnalyticsInitScriptContent}
-        />
       </head>
 
       <body className="flex flex-col min-h-screen antialiased">
-        <AppProviders>
-          <DatadogInit />
-          {children}
-        </AppProviders>
+        <AppProviders>{children}</AppProviders>
       </body>
     </html>
   );

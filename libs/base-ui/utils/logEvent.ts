@@ -1,12 +1,5 @@
 import { isDevelopment } from '../constants';
 
-declare const window: Window &
-  typeof globalThis & {
-  ClientAnalytics: {
-    logEvent: LogEvent;
-  };
-};
-
 enum ComponentType {
   unknown = 'unknown',
   banner = 'banner',
@@ -111,35 +104,27 @@ type LogEvent = (
   importance?: AnalyticsEventImportance,
 ) => void;
 
+// Analytics collection has been removed; these remain as no-ops so call sites
+// keep working and can be repointed at a self-hosted collector later.
 export default function logEvent(
   name: string,
   event: CCAEventData,
   importance: AnalyticsEventImportance | undefined,
 ) {
   if (isDevelopment) {
-    return console.log('logEvent: ', {
+    console.log('logEvent: ', {
       name,
       event,
       importance,
     });
   }
-
-  const CCA = window.ClientAnalytics;
-  if (CCA) {
-    CCA?.logEvent(name, event, importance);
-  }
 }
 
 export function identify(event: CCAEventData) {
   if (isDevelopment) {
-    return console.log('identify: ', {
+    console.log('identify: ', {
       event,
     });
-  }
-
-  const CCA = window.ClientAnalytics;
-  if (CCA) {
-    CCA?.logEvent('identify', event, AnalyticsEventImportance.low);
   }
 }
 
