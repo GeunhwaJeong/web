@@ -3,7 +3,7 @@ import Text from 'apps/web/src/components/base-org/typography/TextRedesign';
 import { TextVariant } from 'apps/web/src/components/base-org/typography/TextRedesign/types';
 import Title from 'apps/web/src/components/base-org/typography/TitleRedesign';
 import { TitleLevel } from 'apps/web/src/components/base-org/typography/TitleRedesign/types';
-import { VideoPlayer } from 'apps/web/src/components/Brand/Video';
+import { VideoPlayer } from 'apps/web/src/components/VideoPlayer';
 import Image from 'next/image';
 
 type LargeCardProps = {

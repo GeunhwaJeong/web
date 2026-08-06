@@ -63,61 +63,8 @@ export function ContextMenu({ children }: { children: React.ReactNode }) {
             </Text>
           </Link>
         </DropdownMenu.Item>
-        <DropdownMenu.Separator className="my-1 border border-base-gray-50 dark:border-base-gray-200" />
-        <DropdownMenu.Item className="group w-full cursor-pointer rounded-[4px] p-2 !text-sm hover:bg-[#fafafa] dark:hover:bg-white/20">
-          <Link
-            prefetch={false}
-            download="/base-brand.zip"
-            href="/base-brand.zip"
-            className="flex gap-2 items-center"
-            onClick={handleClick}
-          >
-            <FolderIcon className="!fill-base-gray-200" />
-            <Text
-              variant={TextVariant.Caption}
-              className="flex-1 !whitespace-nowrap !text-sm !leading-none"
-            >
-              Download brand kit as <span className="text-base-gray-150">.zip</span>
-            </Text>
-          </Link>
-        </DropdownMenu.Item>
-        <DropdownMenu.Item className="group w-full cursor-pointer rounded-[4px] p-2 !text-sm hover:bg-[#fafafa] dark:hover:bg-white/20">
-          <Link
-            target="_blank"
-            prefetch={false}
-            href="https://www.figma.com/community/file/1529530736583775083/base-brand-guidelines-community-kit"
-            className="flex gap-2 items-center"
-            onClick={handleClick}
-          >
-            <FolderIcon />
-            <Text
-              variant={TextVariant.Caption}
-              className="flex-1 !whitespace-nowrap !text-sm !leading-none"
-            >
-              View brand kit as <span className="text-base-gray-150">Figma</span>
-            </Text>
-          </Link>
-        </DropdownMenu.Item>
       </DropdownMenu.Content>
     </DropdownMenu.Root>
-  );
-}
-
-function FolderIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg
-      {...props}
-      width="12"
-      height="12"
-      viewBox="0 0 12 12"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M10.9888 1.49518H7.48877L6.98877 2.49518L1.98877 2.49518V3.69518H10.2888V4.49518H0.48877L1.48877 10.4952H11.4888L11.4888 2.49518L10.9888 1.49518ZM2.47253 9.29518L1.95253 5.69518H9.505L10.025 9.29518H2.47253Z"
-        fill="#0A0B0D"
-      />
-    </svg>
   );
 }
 

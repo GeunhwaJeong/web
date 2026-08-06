@@ -7,7 +7,7 @@ import {
 } from 'apps/web/src/components/base-org/root/Redesign/Section';
 import PrefixAsset from './prefix.svg';
 import { motion } from 'motion/react';
-import { VideoPlayer } from 'apps/web/src/components/Brand/Video';
+import { VideoPlayer } from 'apps/web/src/components/VideoPlayer';
 
 const prefix = PrefixAsset as ImageType;
 
