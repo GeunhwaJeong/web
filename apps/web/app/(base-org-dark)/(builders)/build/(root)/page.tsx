@@ -4,7 +4,6 @@ import buildersCover from './builders.png';
 import Image from 'next/image';
 import { UseCasesSection } from 'apps/web/app/(base-org-dark)/(builders)/build/(root)/UseCasesSection';
 import { StatsSection } from 'apps/web/app/(base-org-dark)/(builders)/build/(root)/StatsSection';
-import { Tab } from 'apps/web/app/(base-org-dark)/(builders)/build/(root)/Tab';
 import { LinkStack } from 'apps/web/app/(base-org-dark)/(builders)/build/(root)/LinkStack';
 import { LinkCard } from 'apps/web/src/components/base-org/shared/LinkCard';
 import {
@@ -35,41 +34,7 @@ const topStatsItems = [
   { value: '0.01', unit: '', label: 'MEDIAN FEE', prefix: '<$' },
 ];
 
-const testimonialsTabItems = [
-  {
-    title: 'Build',
-    content:
-      'Base provides unmatched developer support and fosters a highly constructive community that inspires innovation and encourages you to push boundaries. If you want to build and win, Base is the place to be.',
-    author: 'Dhawal Shah',
-    source: 'HeyElsa AI',
-  },
-  {
-    title: 'Scale',
-    content:
-      "Base stands out for how they support builders at scale. They've gone above and beyond to help us onboard users, build new solutions, and tap into real liquidity.",
-    author: 'David Johansson',
-    source: 'BLOCKLORDS',
-  },
-  {
-    title: 'Monetize',
-    content:
-      "Base is at the crossroad of DeFi, memecoins, NFT, and Coinbase's large distribution network. It's one of the best L2 to build tools and apps that benefit from synergistic integrations!",
-    author: 'Merlin Egalite',
-    source: 'Morpho',
-  },
-];
-
 const links = [
-  {
-    title: 'Base Account',
-    description: 'A passkey-based universal account to connect with the onchain world.',
-    url: '/build/base-account',
-  },
-  {
-    title: 'OnchainKit',
-    description: 'All-in-one toolkit and ready-to-use, full-stack components.',
-    url: '/build/onchainkit',
-  },
   {
     title: 'Mini Apps',
     description: 'Publish your mini app to the Base app with a few lines of code.',
@@ -119,9 +84,6 @@ export default function Builders() {
         viewport={{ once: true }}
         className="flex flex-col gap-y-20"
         contentBlocks={[, <UseCasesSection key="use-cases" />]}
-      />
-      <BuildersSection
-        contentBlocks={[<Tab tabItems={testimonialsTabItems} key="testimonials" />]}
       />
       <BuildersSection
         className="flex flex-col gap-6 md:gap-8"

@@ -1,7 +1,7 @@
 import {
   quadCamera,
   quadGeometry,
-} from 'apps/web/src/components/Brand/Hero/Background/shaders/quads';
+} from 'apps/web/src/components/WebGL/AsciiBackground/shaders/quads';
 
 import { RenderCallback, useThree } from '@react-three/fiber';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';

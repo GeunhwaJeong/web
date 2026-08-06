@@ -5,7 +5,7 @@ import { useCallback, useRef, useState, useMemo } from 'react';
 import * as THREE from 'three';
 import { WebGlTunnelIn } from 'apps/web/src/components/WebGL/Tunnel';
 import { useWebGLInteraction } from 'apps/web/src/hooks/useWebGLInteraction';
-import { Scene } from 'apps/web/src/components/Brand/Hero/Background/scene';
+import { Scene } from 'apps/web/src/components/WebGL/AsciiBackground/scene';
 import defaultImg from 'apps/web/public/images/backgrounds/default.webp';
 
 const patternAtlas = {

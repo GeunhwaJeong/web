@@ -1,0 +1,48 @@
+This product includes software and assets developed by third parties.
+
+------------------------------------------------------------------------
+
+Google Draco (apps/web/public/draco/)
+Copyright 2017 The Draco Authors
+Licensed under the Apache License, Version 2.0
+https://github.com/google/draco
+
+three.js and @react-three/fiber ecosystem
+Copyright 2010-2025 three.js authors; Poimandres contributors
+Licensed under the MIT License
+https://github.com/mrdoob/three.js
+
+Heroicons (@heroicons/react)
+Copyright Tailwind Labs, Inc.
+Licensed under the MIT License
+https://github.com/tailwindlabs/heroicons
+
+Radix UI primitives and icons (@radix-ui/*)
+Copyright WorkOS
+Licensed under the MIT License
+https://github.com/radix-ui
+
+Motion / Framer Motion (motion, framer-motion)
+Copyright Framer B.V.
+Licensed under the MIT License
+https://github.com/motiondivision/motion
+
+------------------------------------------------------------------------
+
+Fonts
+
+Doto (apps/web/src/fonts/doto.ttf)
+Copyright 2024 The Doto Project Authors
+Licensed under the SIL Open Font License, Version 1.1
+https://github.com/oliverlorenz/doto
+
+Inter and Inter Tight (loaded via next/font/google; vendored copy at
+apps/web/src/fonts/InterTight-Regular.ttf)
+Copyright 2020 The Inter Project Authors
+Licensed under the SIL Open Font License, Version 1.1
+https://github.com/rsms/inter
+
+Roboto Mono (loaded via next/font/google)
+Copyright 2015 The Roboto Mono Project Authors
+Licensed under the Apache License, Version 2.0
+https://github.com/googlefonts/RobotoMono

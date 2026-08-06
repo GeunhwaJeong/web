@@ -1,8 +1,0 @@
-{
-  "name": "Ambire Wallet",
-  "url": "https://www.ambire.com/",
-  "description": "Ambire Wallet is an open-source crypto wallet that gives users full control of their assets. It supports account abstraction, making it easier to use Web3 apps and manage tokens securely across multiple networks.",
-  "category": "wallet",
-  "subcategory": "self-custody",
-  "imageUrl": "/images/partners/ambire.webp"
-}

@@ -47,10 +47,6 @@ export function Footer() {
 
 const LINK_SECTIONS = [
   {
-    title: 'Explore',
-    links: [{ label: 'Apps', href: '/ecosystem' }],
-  },
-  {
     title: 'Builders',
     links: [
       { label: 'Tools', href: 'https://www.base.org/build' },
@@ -66,10 +62,7 @@ const LINK_SECTIONS = [
   },
   {
     title: 'Resources',
-    links: [
-      { label: 'Brand kit', href: 'https://www.base.org/brand', newTab: true },
-      { label: 'Events', href: 'https://lu.ma/BaseEvents', newTab: true },
-    ],
+    links: [{ label: 'Events', href: 'https://lu.ma/BaseEvents', newTab: true }],
   },
   {
     title: 'Socials',
