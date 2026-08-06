@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 import minikitCover from './minikit-cover.png';
-import { MinikitFeaturesSection } from 'apps/web/app/(base-org-dark)/(builders)/build/onchainkit/FeaturesSection';
+import { MinikitFeaturesSection } from 'apps/web/app/(base-org-dark)/(builders)/build/mini-apps/FeaturesSection';
 import {
   CtaActions,
   CtaFooterSection,
-} from 'apps/web/app/(base-org-dark)/(builders)/build/onchainkit/CtaFooterSection';
+} from 'apps/web/app/(base-org-dark)/(builders)/build/mini-apps/CtaFooterSection';
 import { MinikitAnalyticsUpsellSection } from 'apps/web/app/(base-org-dark)/(builders)/build/mini-apps/MinikitAnalyticsUpsellSection';
 import { BuildersSection } from 'apps/web/app/(base-org-dark)/(builders)/BuildersSection';
 import { BuildersContainer } from 'apps/web/app/(base-org-dark)/(builders)/BuildersContainer';
@@ -39,7 +39,7 @@ export default function Minikit() {
             </div>
           </div>,
           <div className="order-1 md:order-2" key="minikit-hero-cta">
-            <CtaActions type="minikit" />
+            <CtaActions />
           </div>,
         ]}
       />
@@ -47,7 +47,7 @@ export default function Minikit() {
       <BuildersSection
         contentBlocks={[<MinikitAnalyticsUpsellSection key="minikit-analytics-upsell" />]}
       />
-      <BuildersSection contentBlocks={[<CtaFooterSection type="minikit" key="minikit-cta" />]} />
+      <BuildersSection contentBlocks={[<CtaFooterSection key="minikit-cta" />]} />
     </BuildersContainer>
   );
 }

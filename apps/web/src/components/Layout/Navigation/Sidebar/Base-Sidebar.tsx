@@ -19,7 +19,7 @@ import { Icon } from 'apps/web/src/components/Layout/Navigation/icons';
 import { ContextMenu } from 'apps/web/src/components/ContextMenu';
 import { ExternalLinkIcon } from 'apps/web/src/components/Layout/Navigation/Sidebar/ExternalLinkIcon';
 
-const buildersRoutes = ['/build', '/onchainkit', '/mini-apps', '/base-account', '/appchains'];
+const buildersRoutes = ['/build', '/mini-apps'];
 
 // anim variants
 const mainMenuVariants = {

@@ -16,6 +16,10 @@ const customJestConfig = {
     '^base-ui$': '<rootDir>/../../libs/base-ui/index.ts',
     '.*/libs/base-ui$': '<rootDir>/../../libs/base-ui/index.ts',
     '^ox/BlockOverrides$': '<rootDir>/__mocks__/ox/BlockOverrides.js',
+    // moduleDirectories makes the root node_modules win over nested package
+    // copies; jest's own dependency chain needs the CJS ansi-styles that
+    // pretty-format pins, not the ESM v6 hoisted to the workspace root.
+    '^ansi-styles$': '<rootDir>/../../node_modules/pretty-format/node_modules/ansi-styles/index.js',
   },
   testPathIgnorePatterns: ['<rootDir>/e2e/'],
 };

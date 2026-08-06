@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 import defaultTheme from 'tailwindcss/defaultTheme';
-import path from 'node:path';
 import textScalePlugin from 'tailwindcss-text-scale';
 
 module.exports = {
@@ -12,7 +11,6 @@ module.exports = {
 
     // Or if using `src` directory:
     './src/**/*.{js,ts,jsx,tsx}',
-    path.join(path.dirname(require.resolve('@coinbase/onchainkit')), '**/*.js'),
   ],
   theme: {
     // https://www.figma.com/design/AH4N0fma2EvI30IltjBGPy/%E2%9C%A8-CDS-Styles-(Variables)?node-id=46-168
