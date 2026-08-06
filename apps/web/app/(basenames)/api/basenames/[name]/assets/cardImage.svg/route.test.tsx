@@ -284,7 +284,7 @@ describe('cardImage.svg route', () => {
         expect.objectContaining({
           fonts: expect.arrayContaining([
             expect.objectContaining({
-              name: 'CoinbaseDisplay',
+              name: 'InterTight',
               weight: 500,
               style: 'normal',
             }),

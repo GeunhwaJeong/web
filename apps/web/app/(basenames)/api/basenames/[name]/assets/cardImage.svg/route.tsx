@@ -36,7 +36,7 @@ export const config = {
 };
 
 export async function GET(request: Request, { params }: { params: Promise<{ name: string }> }) {
-  const fontData = await readFile(join(process.cwd(), 'src/fonts/CoinbaseDisplay-Regular.ttf'));
+  const fontData = await readFile(join(process.cwd(), 'src/fonts/InterTight-Regular.ttf'));
 
   const url = new URL(request.url);
 
@@ -127,7 +127,7 @@ export async function GET(request: Request, { params }: { params: Promise<{ name
       height: 1000,
       fonts: [
         {
-          name: 'CoinbaseDisplay',
+          name: 'InterTight',
           data: fontData,
           weight: 500,
           style: 'normal',
