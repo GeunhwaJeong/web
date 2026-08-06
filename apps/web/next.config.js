@@ -60,10 +60,6 @@ const isLocalDevelopment = process.env.NODE_ENV === 'development';
 const isE2ETest = process.env.E2E_TEST === 'true';
 const baseXYZDomains = 'https://base.mirror.xyz';
 const greenhouseDomains = 'https://boards.greenhouse.io https://boards-api.greenhouse.io';
-const walletconnectDomains =
-  'https://*.walletconnect.org wss://*.walletconnect.org wss://*.walletconnect.com https://*.walletconnect.com https://explorer-api.walletconnect.com';
-const metamaskDomains =
-  'wss://metamask-sdk.api.cx.metamask.io https://metamask-sdk.api.cx.metamask.io';
 
 const contentSecurityPolicy = {
   'default-src': [
@@ -72,9 +68,8 @@ const contentSecurityPolicy = {
     "'wasm-unsafe-eval'", // wasm requires 'unsafe-eval'
     isLocalDevelopment ? "'unsafe-eval'" : '',
     baseXYZDomains,
-    walletconnectDomains,
-    'https://fonts.googleapis.com', // OCK styles loads google fonts via CSS
-    'https://fonts.gstatic.com/', // OCK styles loads google fonts via CSS
+    'https://fonts.googleapis.com',
+    'https://fonts.gstatic.com/',
   ],
   'worker-src': ["'self'", 'blob:'],
   'connect-src': [
@@ -82,42 +77,16 @@ const contentSecurityPolicy = {
     'blob:',
     'https://blob.vercel-storage.com', // Vercel File storage
     'https://zku9gdedgba48lmr.public.blob.vercel-storage.com', // Vercel File storage
-    walletconnectDomains,
     greenhouseDomains,
-    'https://ccip-v2.ens.xyz',
-    'https://euc.li',
-    'https://arweave.net',
-    'https://ens.xyz',
-    'https://enhanced-provider.rainbow.me',
-    'https://*.coinbase.com',
-    'wss://www.walletlink.org/rpc', // coinbase wallet connection
-    'mainnet.base.org',
-    'sepolia.base.org',
-    'https://cloudflare-eth.com',
-    'https://i.seadn.io/', // ens avatars
-    'https://api.opensea.io', // enables getting ENS avatars
-    'https://ipfs.io', // ipfs ens avatar resolution
-    'https://cloudflare-ipfs.com', // ipfs Cloudflare ens avatar resolution
-    'wss://www.walletlink.org',
-    'https://base.easscan.org/graphql',
-    'https://api.guild.xyz/',
-    isE2ETest ? 'ws://localhost:8545/' : isLocalDevelopment ? 'ws://localhost:3000/' : '',
-    isE2ETest ? 'http://localhost:8545/' : isLocalDevelopment ? 'http://localhost:3000/' : '',
+    isLocalDevelopment ? 'ws://localhost:3000/' : '',
+    isLocalDevelopment ? 'http://localhost:3000/' : '',
     'https://translate.googleapis.com', // Let user translate our website
-    'https://sdk-api.neynar.com/', // Neynar API
-    'https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web@0.33.0/dist/dotlottie-player.wasm', // lottie player for profile pages
-    'https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web@0.31.1/dist/dotlottie-player.wasm', // lottie player for profile pages
-    'https://unpkg.com/@lottiefiles/dotlottie-web@0.31.1/dist/dotlottie-player.wasm', // lottie player for profile pages
-    'https://unpkg.com/@lottiefiles/dotlottie-web@0.33.0/dist/dotlottie-player.wasm', // lottie player for api
-    `https://${process.env.NEXT_PUBLIC_PINATA_GATEWAY_URL}`,
-    'https://usdc-claim-git-master-coinbase-vercel.vercel.app',
-    'https://eth.merkle.io', // new default viem rpc
-    'https://blue-api.morpho.org/graphql', // morpho
-    'https://base-sepolia.easscan.org/graphql', // nft
-    'wss://metamask-sdk.api.cx.metamask.io', // MetaMask SDK websocket
-    'https://metamask-sdk.api.cx.metamask.io', // MetaMask SDK API
+    'https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web@0.33.0/dist/dotlottie-player.wasm', // lottie player
+    'https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web@0.31.1/dist/dotlottie-player.wasm', // lottie player
+    'https://unpkg.com/@lottiefiles/dotlottie-web@0.31.1/dist/dotlottie-player.wasm', // lottie player
+    'https://unpkg.com/@lottiefiles/dotlottie-web@0.33.0/dist/dotlottie-player.wasm', // lottie player
   ],
-  'frame-src': ['https://p.datadoghq.com', walletconnectDomains],
+  'frame-src': ['https://p.datadoghq.com'],
   'frame-ancestors': ["'self'", baseXYZDomains],
   'form-action': ["'self'", baseXYZDomains],
   'img-src': [
@@ -126,15 +95,7 @@ const contentSecurityPolicy = {
     'data:',
     'https://base.org',
     'https://*.base.org',
-    'https://euc.li',
-    'https://*.walletconnect.com/', // WalletConnect
-    'https://i.seadn.io/', // ens avatars
-    'https://ipfs.io', // ipfs ens avatar resolution
-    'https://cloudflare-ipfs.com', // ipfs Cloudflare ens avatar resolution
     'https://res.cloudinary.com',
-    `https://${process.env.NEXT_PUBLIC_PINATA_GATEWAY_URL}`,
-    'https://img.reservoir.tools', // reservoir
-    'https://d3r81g40ycuhqg.cloudfront.net/', // OCK Earn component
   ],
 };
 
@@ -268,17 +229,6 @@ module.exports = MillionLint.next({
             basePath: false,
             headers: securityHeaders,
           },
-          {
-            source: '/pay',
-            basePath: false,
-            headers: [
-              ...securityHeaders,
-              {
-                key: 'cross-origin-opener-policy',
-                value: 'unsafe-none',
-              },
-            ],
-          },
         ];
       },
       async rewrites() {
@@ -336,26 +286,6 @@ module.exports = MillionLint.next({
           {
             source: '/registry-edit',
             destination: 'https://buildonbase.deform.cc/registry-edit/',
-            permanent: true,
-          },
-          {
-            source: '/name/:path.base.eth',
-            destination: '/name/:path',
-            permanent: true,
-          },
-          {
-            source: '/names/:path',
-            destination: '/name/:path',
-            permanent: true,
-          },
-          {
-            source: '/name',
-            destination: '/names',
-            permanent: true,
-          },
-          {
-            source: '/builders/smart-wallet',
-            destination: '/build/base-account',
             permanent: true,
           },
           {

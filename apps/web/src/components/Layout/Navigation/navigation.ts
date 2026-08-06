@@ -408,16 +408,6 @@ export const DEFAULT_ROUTES: DefaultRoute[] = [
         newTab: true,
       },
       {
-        icon: 'wallet',
-        label: 'Base Account',
-        href: '/build/base-account',
-      },
-      {
-        icon: 'terminal',
-        label: 'OnchainKit',
-        href: '/build/onchainkit',
-      },
-      {
         icon: 'rocket',
         label: 'Mini Apps',
         href: '/build/mini-apps',
