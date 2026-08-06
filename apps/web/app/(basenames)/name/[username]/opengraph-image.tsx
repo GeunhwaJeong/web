@@ -64,7 +64,7 @@ export default async function OpenGraphImage(props: ImageRouteProps) {
   }
 
   const fontData = await fetch(
-    new URL('apps/web/src/fonts/CoinbaseDisplay-Regular.ttf', import.meta.url),
+    new URL('apps/web/src/fonts/InterTight-Regular.ttf', import.meta.url),
   ).then(async (res) => res.arrayBuffer());
 
   const domainName = isDevelopment ? `http://localhost:3000` : 'https://www.base.org';
@@ -156,7 +156,7 @@ export default async function OpenGraphImage(props: ImageRouteProps) {
       ...size,
       fonts: [
         {
-          name: 'CoinbaseDisplay',
+          name: 'InterTight',
           data: fontData,
           style: 'normal',
         },

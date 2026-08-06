@@ -322,7 +322,7 @@ describe('opengraph-image', () => {
       const call = ImageResponse.mock.calls[0] as { fonts: { name: string; style: string }[] }[];
       expect(call[1].fonts).toHaveLength(1);
       expect(call[1].fonts[0]).toMatchObject({
-        name: 'CoinbaseDisplay',
+        name: 'InterTight',
         style: 'normal',
       });
     });
