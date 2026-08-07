@@ -27,7 +27,7 @@ export function SectionBasePay() {
 const content = {
   prefix: {
     src: prefix.src,
-    alt: 'Base Pay',
+    alt: 'Haneul Pay',
     width: prefix.width,
     height: prefix.height,
   },
@@ -36,6 +36,6 @@ const content = {
     'Express checkout with global settlement at near-zero cost. Live on Shopify, coming to more stores, and available for every business to accept USDC.',
   cta: {
     label: 'Learn more',
-    href: 'https://base.org/pay',
+    href: 'https://haneul.io',
   },
 };

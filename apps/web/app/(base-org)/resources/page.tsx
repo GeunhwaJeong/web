@@ -12,12 +12,12 @@ import ResourcesStartBuildingSection from 'apps/web/src/components/Resources/sec
 import ResourcesBuildWithUs from 'apps/web/src/components/Resources/section/BuildWithUs';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://base.org'),
-  title: 'Base | Resources',
+  metadataBase: new URL('https://haneul.io'),
+  title: 'Haneul | Resources',
   openGraph: {
-    title: 'Base | Resources',
+    title: 'Haneul | Resources',
     url: '/resources',
-    images: ['https://base.org/images/getstarted-open-graph.png'],
+    images: ['/images/getstarted-open-graph.png'],
   },
 };
 

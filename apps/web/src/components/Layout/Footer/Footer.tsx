@@ -49,41 +49,16 @@ const LINK_SECTIONS = [
   {
     title: 'Builders',
     links: [
-      { label: 'Tools', href: 'https://www.base.org/build' },
-      { label: 'BaseScan', href: 'https://basescan.org/' },
-      {
-        label: 'Gas credits',
-        href: 'https://docs.base.org/identity/smart-wallet/introduction/base-gasless-campaign',
-        newTab: true,
-      },
-      { label: 'Engineering blog', href: 'https://www.base.dev/blog', newTab: true },
-      { label: 'Support', href: 'https://discord.com/invite/buildonbase' }, // TODO: add discord link
+      { label: 'Tools', href: '/build' },
+      { label: 'Docs', href: 'https://docs.haneul.io', newTab: true },
     ],
-  },
-  {
-    title: 'Resources',
-    links: [{ label: 'Events', href: 'https://lu.ma/BaseEvents', newTab: true }],
   },
   {
     title: 'Socials',
-    links: [
-      { label: 'X', href: 'https://x.com/base', newTab: true },
-      { label: 'Base App', href: 'https://base.app', newTab: true },
-      { label: 'Discord', href: 'https://discord.com/invite/buildonbase', newTab: true },
-      { label: 'Reddit', href: 'https://www.reddit.com/r/BASE/', newTab: true },
-    ],
+    links: [{ label: 'GitHub', href: 'https://github.com/GeunhwaJeong/haneul', newTab: true }],
   },
   {
-    title: 'Base',
-    links: [
-      {
-        label: 'Vision',
-        href: '/about/vision',
-      },
-      { label: 'Blog', href: 'https://paragraph.xyz/@base', newTab: true },
-      { label: 'Jobs', href: '/jobs' },
-      { label: 'Terms of service', href: 'https://docs.base.org/terms-of-service', newTab: true }, // TODO: update
-      { label: 'Privacy policy', href: 'https://docs.base.org/privacy-policy', newTab: true },
-    ],
+    title: 'Haneul',
+    links: [{ label: 'Vision', href: '/about/vision' }],
   },
 ];

@@ -24,7 +24,7 @@ export default async function Funding() {
         <ResourceCard
           title="Rounds Grants"
           description="Post to /base-builds on Farcaster to be eligible for 2.25 ETH in weekly rewards"
-          href="https://warpcast.com/base/0xb3f1428b?utm_source=dotorg&urm_medium=builderkit"
+          href="#"
           topLeft={<span className="font-mono">02</span>}
           topRight={<Icon name="diagonalUpArrow" width="16px" height="16px" />}
           classnames="bg-green-60 border-green-60"

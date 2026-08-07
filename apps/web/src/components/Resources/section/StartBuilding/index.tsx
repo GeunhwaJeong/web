@@ -25,7 +25,7 @@ export default function ResourcesStartBuildingSection() {
       </Title>
       <ResourcesGrid items={ITEMS03} accentColor="brown" />
       <Link
-        href="https://www.base.org/build"
+        href="/build"
         className="group col-span-full mt-2 flex w-fit items-center gap-1.5 lg:mt-14"
       >
         <Text
@@ -56,39 +56,39 @@ const ITEMS01 = [
   {
     title: 'Learn to build onchain',
     description: 'Become an onchain developer with our comprehensive smart contract curriculum.',
-    href: 'https://docs.base.org/learn/welcome/?utm_source=dotorg&utm_medium=builderkit',
+    href: 'https://docs.haneul.io',
   },
   {
     title: 'Grow your app',
     description:
-      'Get featured on the Base app, win builder rewards, and unlock insights to grow faster.',
-    href: 'https://www.base.dev/',
+      'Get featured on the Haneul app, win builder rewards, and unlock insights to grow faster.',
+    href: '#',
   },
 ];
 const ITEMS02 = [
   {
-    title: 'Build on Base',
+    title: 'Build on Haneul',
     description: 'Everything you need to build, grow, and earn onchain.',
-    href: 'https://www.base.org/build',
+    href: '/build',
   },
   {
-    title: 'Base Services Hub',
+    title: 'Haneul Services Hub',
     description:
-      'Exclusive discounts on software and services that help projects ship faster, scale growth and build on Base.',
-    href: 'https://docs.base.org/get-started/base-services-hub',
+      'Exclusive discounts on software and services that help projects ship faster, scale growth and build on Haneul.',
+    href: 'https://docs.haneul.io',
   },
 ];
 const ITEMS03 = [
   {
-    title: 'Launch on Base',
+    title: 'Launch on Haneul',
     description:
-      'Your guide to launching and growing on Base from pre-launch, launch, to post launch.',
+      'Your guide to launching and growing on Haneul from pre-launch, launch, to post launch.',
     href: 'https://www.launchonbase.xyz/',
   },
   {
     title: 'Get Mentorship',
     description:
-      'Connect with experienced builders and industry leaders to accelerate your journey on Base.',
-    href: 'https://docs.base.org/get-started/base-mentorship-program',
+      'Connect with experienced builders and industry leaders to accelerate your journey on Haneul.',
+    href: 'https://docs.haneul.io',
   },
 ];

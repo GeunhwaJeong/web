@@ -41,7 +41,7 @@ export default async function Essentials() {
         <ResourceCard
           title="Virtual Events"
           description="Check out our Virtual Events schedule to ask your questions live"
-          href="https://lu.ma/base-virtualevents/?utm_source=dotorg&medium=builderkit"
+          href="#"
           topLeft={<Icon name="dotGrid" color="white" />}
           classnames="bg-purple-60 border-purple-60"
         />

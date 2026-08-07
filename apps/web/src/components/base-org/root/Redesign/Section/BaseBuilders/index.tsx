@@ -19,15 +19,15 @@ export function SectionBaseBuilders() {
 const content = {
   prefix: {
     src: prefix.src,
-    alt: 'Base Build',
+    alt: 'Haneul Build',
     width: prefix.width,
     height: prefix.height,
   },
   title: 'From idea to app to business',
   description:
-    'Base gives builders the tools they need to build, grow, and earn from their apps, at every stage.',
+    'Haneul gives builders the tools they need to build, grow, and earn from their apps, at every stage.',
   cta: {
     label: 'Start Building',
-    href: 'https://base.org/build',
+    href: 'https://haneul.io',
   },
 };

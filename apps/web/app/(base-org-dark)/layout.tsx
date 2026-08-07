@@ -6,20 +6,19 @@ import { DynamicWrappedGasPriceDropdown } from 'apps/web/src/components/Layout/N
 import AnalyticsProvider from 'apps/web/contexts/Analytics';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://base.org'),
-  title: `Base`,
+  metadataBase: new URL('https://haneul.io'),
+  title: `Haneul`,
   description:
-    'Base is a secure, low-cost, builder-friendly Ethereum L2 built to bring the next billion users onchain.',
+    'Haneul is a secure, low-cost, builder-friendly Ethereum L2 built to bring the next billion users onchain.',
   openGraph: {
     type: 'website',
-    title: `Base`,
+    title: `Haneul`,
     description:
-      'Base is a secure, low-cost, builder-friendly Ethereum L2 built to bring the next billion users onchain.',
+      'Haneul is a secure, low-cost, builder-friendly Ethereum L2 built to bring the next billion users onchain.',
     url: `/`,
-    images: ['https://base.org/images/base-open-graph.png'],
+    images: ['/images/base-open-graph.png'],
   },
   twitter: {
-    site: '@base',
     card: 'summary_large_image',
   },
 };

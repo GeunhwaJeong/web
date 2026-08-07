@@ -29,7 +29,7 @@ export function PolicyBanner() {
             We&apos;re updating the Base Privacy Policy, effective July 25, 2025, to reflect an
             expansion of Base services. Please review the updated policy here:{' '}
             <a
-              href="https://docs.base.org/privacy-policy-2025"
+              href="https://docs.haneul.io"
               target="_blank"
               className="whitespace-nowrap underline"
               rel="noreferrer"

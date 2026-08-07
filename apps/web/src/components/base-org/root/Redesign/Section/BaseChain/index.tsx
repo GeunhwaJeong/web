@@ -331,11 +331,11 @@ export const Icons = {
 const content = {
   prefix: {
     src: prefix.src,
-    alt: 'Base Chain',
+    alt: 'Haneul Chain',
     width: prefix.width,
     height: prefix.height,
   },
   title: 'An open network for the global economy',
   description:
-    'Fast, open, and built to scale. The Base economy is growing every day, fueled by real builders.',
+    'Fast, open, and built to scale. The Haneul economy is growing every day, fueled by real builders.',
 };

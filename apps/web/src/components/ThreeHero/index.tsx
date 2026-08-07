@@ -83,7 +83,7 @@ const Physics = dynamic(async () => import('@react-three/rapier').then((mod) => 
 */
 
 const mintLink =
-  'https://wallet.coinbase.com/nft/mint/eip155:8453:erc721:0x803Fc79D31AB30a39B3BD2A90171470cC82Ba44a';
+  '#';
 
 const gravity: Vector3Tuple = [0, 0, 0];
 

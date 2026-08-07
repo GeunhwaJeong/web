@@ -220,7 +220,7 @@ export default function ResourcesBuildWithUs() {
           Start building with us.
         </Title>
         <Title level={TitleLevel.H6Regular} as="h3">
-          There&apos;s a place for you on Base.
+          There&apos;s a place for you on Haneul.
           <br />
           Let&apos;s build a better internet, together.
         </Title>
@@ -228,7 +228,7 @@ export default function ResourcesBuildWithUs() {
           <Button variant={ButtonVariants.Secondary} className="w-full lg:max-w-60" asChild>
             <Link
               target="_blank"
-              href="https://lu.ma/base-virtualevents/?utm_source=dotorg&medium=builderkit"
+              href="#"
             >
               Virtual events
             </Link>
@@ -236,7 +236,7 @@ export default function ResourcesBuildWithUs() {
           <Button className="w-full lg:max-w-52">
             <Link
               target="_blank"
-              href="https://docs.base.org/docs/?utm_source=dotorg&utm_medium=builderkit"
+              href="https://docs.haneul.io"
             >
               View our docs
             </Link>

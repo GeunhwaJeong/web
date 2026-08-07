@@ -4,29 +4,20 @@ import { JobType } from 'apps/web/src/components/Jobs/Job';
 import JobsList from 'apps/web/src/components/Jobs/JobsList';
 import { Hero } from 'apps/web/src/components/Jobs/Redesign/Hero';
 import { WebGLCanvas } from 'apps/web/src/components/WebGL/WebGLCanvas';
-import { greenhouseApiUrl } from 'apps/web/src/constants';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://base.org'),
-  title: `Base | Jobs`,
+  metadataBase: new URL('https://haneul.io'),
+  title: `Haneul | Jobs`,
   openGraph: {
-    title: `Base | Jobs`,
+    title: `Haneul | Jobs`,
     url: `/jobs`,
   },
 };
 
 async function getJobs() {
-  const res = await fetch(`${greenhouseApiUrl}/boards/basejobs/jobs?content=true`, {
-    next: { revalidate: 60 * 30 }, // Revalidate every 30 minutes
-  });
-  try {
-    const { jobs } = (await res.json()) as { jobs: JobType[] };
-    return jobs;
-  } catch (_error) {
-    console.error(_error);
-  }
-  return [];
+  // Job board integration pending; returns an empty list until a board is connected.
+  return [] as JobType[];
 }
 
 export default async function Jobs() {

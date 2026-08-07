@@ -14,7 +14,7 @@ const TERMINAL_CONFIG = {
       id: 'command',
       type: 'typewriter' as const,
       prompt: '$ ',
-      text: 'npm create onchain',
+      text: 'haneul move new my_app',
       className: 'text-[#0000ff]',
       delay: 50,
       speed: 15,
@@ -29,8 +29,8 @@ const TERMINAL_CONFIG = {
     {
       id: 'project-name',
       type: 'typewriter' as const,
-      prompt: 'Project name:',
-      text: 'my onchain app',
+      prompt: '$ ',
+      text: 'haneul move build',
       className: 'text-[#0000ff]',
       delay: 100,
       speed: 12,
@@ -39,8 +39,8 @@ const TERMINAL_CONFIG = {
     {
       id: 'smart-wallet',
       type: 'typewriter' as const,
-      prompt: 'Use Coinbase Smart Wallet? (recommended):',
-      text: 'yes',
+      prompt: 'BUILDING',
+      text: ' my_app',
       className: 'text-[#0000ff]',
       delay: 160,
       speed: 18,
@@ -49,21 +49,21 @@ const TERMINAL_CONFIG = {
     {
       id: 'api-key',
       type: 'prompt' as const,
-      prompt: 'Enter your Coinbase Developer Platform API Key: (Optional)',
+      prompt: '$',
       delay: 120,
       nextStepDelay: 2000,
     },
   ],
   asciiArt: `
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//         ::::::::  ::::    :::  ::::::::  :::    :::     :::     ::::::::::: ::::    ::: :::    ::: ::::::::::: :::::::::::   //
-//       :+:    :+: :+:+:   :+: :+:    :+: :+:    :+:   :+: :+:       :+:     :+:+:   :+: :+:   :+:      :+:         :+:        //
-//      +:+    +:+ :+:+:+  +:+ +:+        +:+    +:+  +:+   +:+      +:+     :+:+:+  +:+ +:+  +:+       +:+         +:+         //
-//     +#+    +:+ +#+ +:+ +#+ +#+        +#+    +#+ +#++:++#++:     +#+     +#+ +:+ +#+ +#++:++        +#+         +#+          //
-//    +#+    +#+ +#+  +#+#+# +#+        +#+    +#+ +#+     +#+     +#+     +#+  +#+#+# +#+  +#+       +#+         +#+           //
-//   #+#    #+# #+#   #+#+# #+#    #+# #+#    #+# #+#     #+#     #+#     #+#   #+#+# #+#   #+#      #+#         #+#            //
-//   ########  ###    ####  ########  ###    ### ###     ### ########### ###    #### ###    ### ###########     ###             //
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////`,
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  :::         :::     :::::::::     :::         :::  :::::::::::::::  :::         :::  :::              //
+//  :+:         :+:  :+:         :+:  :+::+:      :+:  :+:              :+:         :+:  :+:              //
+//  +:+         +:+  +:+         +:+  +:+   +:+   +:+  +:+              +:+         +:+  +:+              //
+//  +#++#++#++#++#+  +#++#++#++#++#+  +#+      +#++#+  +#++#++#++#+     +#+         +#+  +#+              //
+//  +#+         +#+  +#+         +#+  +#+         +#+  +#+              +#+         +#+  +#+              //
+//  #+#         #+#  #+#         #+#  #+#         #+#  #+#              #+#         #+#  #+#              //
+//  ###         ###  ###         ###  ###         ###  ###############     #########     ###############  //
+////////////////////////////////////////////////////////////////////////////////////////////////////////////`,
 };
 
 const TERMINAL_STYLES = {
@@ -308,7 +308,7 @@ export function Terminal() {
         </div>
         <div className="flex flex-1 justify-center">
           <div className="flex items-center text-[10px] text-base-gray-150 md:text-sm">
-            <span className="ml-2">&gt;- OnchainKit</span>
+            <span className="ml-2">&gt;- haneul</span>
           </div>
         </div>
         <div className="w-[48px] md:w-[64px]" />

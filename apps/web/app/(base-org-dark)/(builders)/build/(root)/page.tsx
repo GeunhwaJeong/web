@@ -19,10 +19,10 @@ import Title from 'apps/web/src/components/base-org/typography/TitleRedesign';
 import { TitleLevel } from 'apps/web/src/components/base-org/typography/TitleRedesign/types';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://base.org'),
-  title: `Base | Builders`,
+  metadataBase: new URL('https://haneul.io'),
+  title: `Haneul | Builders`,
   openGraph: {
-    title: `Base | Builders`,
+    title: `Haneul | Builders`,
     url: `/build`,
     images: [buildersCover.src],
   },
@@ -37,7 +37,7 @@ const topStatsItems = [
 const links = [
   {
     title: 'Mini Apps',
-    description: 'Publish your mini app to the Base app with a few lines of code.',
+    description: 'Publish your mini app to the Haneul app with a few lines of code.',
     url: '/build/mini-apps',
   },
 ];
@@ -46,21 +46,21 @@ const builderCardItems = [
   {
     title: 'Builder Grants',
     actionCta: 'Apply for Grants',
-    href: 'https://paragraph.com/@grants.base.eth/calling-based-builders',
+    href: '#',
     hoverImage: '/images/builder-grant-hover.png',
     imageClassName: 'object-cover md:object-contain md:object-[80px_170%]',
   },
   {
     title: 'Builder Rewards',
     actionCta: 'Claim rewards',
-    href: 'http://builderscore.xyz/',
+    href: '#',
     hoverImage: '/images/builder-rewards-hover.png',
     imageClassName: 'object-cover md:object-contain md:scale-[1.5] md:object-[0_63%]',
   },
   {
-    title: 'Base Batches',
+    title: 'Haneul Batches',
     actionCta: 'APPLY TO JOIN',
-    href: 'https://www.basebatches.xyz/',
+    href: '#',
     hoverImage: '/images/base-batches-hover.png',
     imageClassName: 'object-cover md:object-contain md:object-[0_107%]',
   },
@@ -102,7 +102,7 @@ export default function Builders() {
           </Title>,
           <div className="mb-4" key="get-funded-stats">
             <StatsSection
-              description="Base supports builders at every stage—from idea, to app, to business."
+              description="Haneul supports builders at every stage—from idea, to app, to business."
               statItems={[]}
               animated
               key="funded"
@@ -148,7 +148,7 @@ export default function Builders() {
               size={ButtonSizes.Small}
               asChild
             >
-              <Link href="https://docs.base.org/" target="_blank" rel="noopener noreferrer">
+              <Link href="https://docs.haneul.io" target="_blank" rel="noopener noreferrer">
                 Start building
               </Link>
             </Button>

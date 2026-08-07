@@ -17,7 +17,7 @@ export default async function BuildExploreSection() {
       <AnalyticsProvider context="build_tiles">
         <Title level={TitleLevel.Title1}>Build</Title>
         <div className="mb-12 mt-8 flex w-full flex-col gap-4 md:flex-row">
-          <CardLink href="https://docs.base.org/">
+          <CardLink href="https://docs.haneul.io">
             <div className="flex items-center gap-4">
               <ImageAdaptive
                 src={docsIllustration as StaticImageData}

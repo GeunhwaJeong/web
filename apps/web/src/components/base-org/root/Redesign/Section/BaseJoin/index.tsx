@@ -43,7 +43,7 @@ type CardProps = React.ComponentProps<typeof InteractiveCard> & { index: number;
 const cards: CardProps[] = [
   {
     index: 1,
-    title: 'Base Batches',
+    title: 'Haneul Batches',
     description:
       'Turn your ideas into real products and kickstart your business, with mentorship, community, visibility, and pathways to funding.',
     image: card1.src,
@@ -55,7 +55,7 @@ const cards: CardProps[] = [
     index: 2,
     title: 'BaseCamp 2025',
     description:
-      'Watch the State of Base livestream from BaseCamp 2025, where we announced that Base is exploring a network token and more.',
+      'Watch the State of Haneul livestream from BaseCamp 2025, where we announced that Haneul is exploring a network token and more.',
     image: card2.src,
     brightness: 1.2,
     contrast: 0.9,
@@ -64,10 +64,10 @@ const cards: CardProps[] = [
   {
     index: 3,
     title: 'Meetups',
-    description: 'Connect with the Base community. Join a meetup near you.',
+    description: 'Connect with the Haneul community. Join a meetup near you.',
     image: card3.src,
     brightness: 1.9,
     contrast: 0.8,
-    href: 'https://lu.ma/BaseEvents',
+    href: '#',
   },
 ];

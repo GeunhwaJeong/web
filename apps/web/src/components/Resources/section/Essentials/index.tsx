@@ -91,12 +91,12 @@ const ITEMS = [
   },
   {
     title: 'Create your profile',
-    href: 'https://www.base.org/names?utm_source=dotorg&utm_medium=builderkit',
+    href: 'https://haneul.io',
     description: 'Claim a basename and create your based profile to connect with other builders.',
   },
   {
     title: 'Virtual events',
-    href: 'https://lu.ma/base-virtualevents/?utm_source=dotorg&medium=builderkit',
+    href: '#',
     description: 'Check out our Virtual Events schedule to ask your questions live.',
   },
   {

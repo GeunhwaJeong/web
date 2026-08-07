@@ -11,21 +11,21 @@ export async function GetConnected() {
         <div className="flex flex-row gap-4 lg:h-full lg:items-center lg:gap-8">
           <GetConnectedButton
             iconName="farcaster"
-            href="https://warpcast.com/base"
+            href="#"
             eventName="farcaster"
             title="Join us on Warpcast"
             aria-label="Join us on Warpcast"
           />
           <GetConnectedButton
             iconName="discord"
-            href="https://discord.com/invite/buildonbase"
+            href="#"
             eventName="discord"
             title="Join us on Discord"
             aria-label="Join us on Discord"
           />
           <GetConnectedButton
             iconName="twitter"
-            href="https://x.com/base"
+            href="#"
             eventName="twitter"
             title="Join us on X"
             aria-label="Join us on X"

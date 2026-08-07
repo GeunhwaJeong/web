@@ -24,7 +24,7 @@ export default async function GetNoticed() {
         <ResourceCard
           title="Base Builds Channel"
           description="Share your project on /base and /base-builds to get community feedback on Farcaster"
-          href="https://warpcast.com/~/channel/base-builds/?utm_source=dotorg&utm_medium=builderkit"
+          href="#"
           topLeft={<span className="font-mono">02</span>}
           topRight={<Icon name="diagonalUpArrow" width="16px" height="16px" />}
           classnames="bg-pink-60 border-pink-60"

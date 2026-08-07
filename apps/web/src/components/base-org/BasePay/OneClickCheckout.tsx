@@ -32,7 +32,7 @@ export default function OneClickCheckout() {
           <motion.div style={animationStyle} className="origin-top">
             <ImageWithLoading
               src="/images/basepay/checkout-image.webp"
-              alt="Base Pay checkout"
+              alt="Haneul Pay checkout"
               width={375}
               height={410}
             />
