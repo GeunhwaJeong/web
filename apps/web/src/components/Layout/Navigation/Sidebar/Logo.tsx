@@ -237,7 +237,7 @@ export function SidebarLogo() {
       const secondSequence: AnimationSequence = [];
 
       // === PHASE 7: LETTER REMOVAL AND GRID SHUFFLE (0s) ===
-      const letterIndices = [1, 3, 0, 2];
+      const letterIndices = [1, 4, 3, 0, 5, 2];
       const letterRemovalTime = 0;
 
       letterIndices.forEach((letterIndex, seqIndex) => {
