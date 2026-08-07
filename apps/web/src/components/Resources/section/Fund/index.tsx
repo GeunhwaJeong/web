@@ -16,21 +16,21 @@ export default function ResourcesFundSection() {
 
 const ITEMS = [
   {
-    title: 'Base Ecosystem Fund',
+    title: 'Haneul Ecosystem Fund',
     description:
-      'Early stage projects (pre-seed to seed) building on Base can apply for investment.',
+      'Early stage projects (pre-seed to seed) building on Haneul can apply for investment.',
     href: 'https://docs.google.com/forms/d/e/1FAIpQLSeiSAod4PAbXlvvDGtHWu-GqzGpvHYfaTQR2f77AawD7GYc4Q/viewform',
   },
   {
-    title: 'Base Builder Rewards',
+    title: 'Haneul Builder Rewards',
     description:
-      'The Base ecosystem offers multiple funding pathways designed specifically for builders at every stage, from weekend hacks to full-scale businesses.',
-    href: 'https://docs.base.org/get-started/get-funded',
+      'The Haneul ecosystem offers multiple funding pathways designed specifically for builders at every stage, from weekend hacks to full-scale businesses.',
+    href: 'https://docs.haneul.io',
   },
   {
     title: 'Paymaster Gas Credits',
     description:
       'Get up to $600 in free Paymaster credits for signing up, and build gasless onchain apps that make it easier for your users to onboard.',
-    href: 'https://www.coinbase.com/developer-platform/products/paymaster',
+    href: '#',
   },
 ];

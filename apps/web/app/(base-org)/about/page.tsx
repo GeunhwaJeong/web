@@ -7,10 +7,10 @@ import { StartBuildingOnBase } from 'apps/web/src/components/StartBuildingOnBase
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://base.org'),
-  title: `Base | About`,
+  metadataBase: new URL('https://haneul.io'),
+  title: `Haneul | About`,
   openGraph: {
-    title: `Base | About`,
+    title: `Haneul | About`,
     url: `/about`,
   },
 };

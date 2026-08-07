@@ -72,7 +72,7 @@ export function SupportedPlatforms() {
               height={16}
             />
           }
-          href="https://warpcast.com/"
+          href="#"
         />
         <SupportedPlatformCard
           description="In Alpha"
@@ -81,7 +81,7 @@ export function SupportedPlatforms() {
           logo={
             <Image src={walletLogo as StaticImageData} alt="Wallet logo" width={20} height={20} />
           }
-          href="https://wallet.coinbase.com/"
+          href="#"
         />
       </div>
     </div>

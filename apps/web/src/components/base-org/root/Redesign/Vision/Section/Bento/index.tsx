@@ -31,7 +31,7 @@ export function SectionBento() {
       <div className="col-span-full lg:col-span-7">
         <Title level={TitleLevel.H6Regular} as="h3" className="!text-pretty">
           And on top of it all, a vibrant ecosystem with millions of people, thousands of apps, and
-          businesses big and small. All building on Base.
+          businesses big and small. All building on Haneul.
         </Title>
       </div>
     </Section>
@@ -48,15 +48,15 @@ const cardsContent = [
   {
     prefix: {
       src: baseChainPrefix.src,
-      alt: 'Base Chain',
+      alt: 'Haneul Chain',
       width: baseChainPrefix.width,
       height: baseChainPrefix.height,
     },
-    title: 'Base Chain',
+    title: 'Haneul Chain',
     description: 'An open network to power the global economy—fast, open, built to scale.',
     asset: {
       src: baseChainAsset.src,
-      alt: 'Base Chain',
+      alt: 'Haneul Chain',
       width: baseChainAsset.width,
       height: baseChainAsset.height,
     },
@@ -65,16 +65,16 @@ const cardsContent = [
   {
     prefix: {
       src: baseBuildersPrefix.src,
-      alt: 'Base Builders',
+      alt: 'Haneul Builders',
       width: baseBuildersPrefix.width,
       height: baseBuildersPrefix.height,
     },
-    title: 'Base Build',
+    title: 'Haneul Build',
     description:
       'Everything builders need to build, grow, and earn from their apps—at every stage.',
     asset: {
       src: baseBuildersAsset.src,
-      alt: 'Base Builders',
+      alt: 'Haneul Builders',
       width: baseBuildersAsset.width,
       height: baseBuildersAsset.height,
     },
@@ -83,15 +83,15 @@ const cardsContent = [
   {
     prefix: {
       src: baseAppPrefix.src,
-      alt: 'Base App',
+      alt: 'Haneul App',
       width: baseAppPrefix.width,
       height: baseAppPrefix.height,
     },
-    title: 'Base App',
+    title: 'Haneul App',
     description: 'A new kind of social network for people. The gateway to the global economy.',
     asset: {
       src: baseAppAsset.src,
-      alt: 'Base App',
+      alt: 'Haneul App',
       width: baseAppAsset.width,
       height: baseAppAsset.height,
     },
@@ -100,16 +100,16 @@ const cardsContent = [
   {
     prefix: {
       src: basePayPrefix.src,
-      alt: 'Base Pay',
+      alt: 'Haneul Pay',
       width: basePayPrefix.width,
       height: basePayPrefix.height,
     },
-    title: 'Base Pay',
+    title: 'Haneul Pay',
     description:
       'Express checkout with global settlement at near-zero cost. Available for every business to accept USDC.',
     asset: {
       src: '/videos/basepay-square.webm',
-      alt: 'Base Pay',
+      alt: 'Haneul Pay',
       width: 0,
       height: 0,
     },

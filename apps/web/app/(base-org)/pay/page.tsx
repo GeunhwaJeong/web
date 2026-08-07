@@ -11,11 +11,11 @@ import Container from 'apps/web/src/components/base-org/Container';
 import { WebGLCanvas } from 'apps/web/src/components/WebGL/WebGLCanvas';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://base.org'),
-  title: 'Base Pay',
+  metadataBase: new URL('https://haneul.io'),
+  title: 'Haneul Pay',
   description: 'The fastest way to pay with USDC.',
   openGraph: {
-    title: 'Base Pay',
+    title: 'Haneul Pay',
     description: 'The fastest way to pay with USDC.',
     url: '/base-pay',
   },

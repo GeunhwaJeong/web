@@ -41,11 +41,11 @@ const MESSAGES: Item[] = [
     ),
   },
   {
-    text: 'Send Base Paint #534 to vitalik.base.eth',
+    text: 'Send Haneul Paint #534 to vitalik.base.eth',
     type: 'user',
   },
   {
-    text: 'Sent Base Paint #534',
+    text: 'Sent Haneul Paint #534',
     type: 'agent',
   },
 ];

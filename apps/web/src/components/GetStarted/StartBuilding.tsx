@@ -18,7 +18,7 @@ export default async function StartBuilding() {
         <ResourceCard
           title="Learn to Build Onchain"
           description="Become an onchain developer with our comprehensive smart contract curriculum"
-          href="https://docs.base.org/learn/welcome/?utm_source=dotorg&utm_medium=builderkit"
+          href="https://docs.haneul.io"
           topLeft={<span className="font-mono">01</span>}
           topRight={<Icon name="diagonalUpArrow" width="16px" height="16px" />}
           classnames="bg-orange-80 border-orange-80"
@@ -26,7 +26,7 @@ export default async function StartBuilding() {
         <ResourceCard
           title="Tutorials"
           description="Build now with 1-2-3 quickstarts, then evolve your onchain app with advanced topics"
-          href="https://www.base.org/builders/?utm_source=dotorg&utm_medium=builderkit"
+          href="/builders/?utm_source=dotorg&utm_medium=builderkit"
           topLeft={<span className="font-mono">02</span>}
           topRight={<Icon name="diagonalUpArrow" width="16px" height="16px" />}
           classnames="bg-orange-60 border-orange-60"
@@ -45,7 +45,7 @@ export default async function StartBuilding() {
         <ResourceCard
           title="Support Team"
           description="If you're ever in need, please reach out in a dedicated Discord support channel"
-          href="https://discord.com/invite/buildonbase"
+          href="#"
           topLeft={<span className="font-mono">02</span>}
           topRight={<Icon name="diagonalUpArrow" width="16px" height="16px" />}
           classnames="bg-orange-80 border-orange-80"
@@ -56,7 +56,7 @@ export default async function StartBuilding() {
         <ResourceCard
           title="Coinbase Smart Wallet"
           description="Enable your users to create an account in seconds, without apps or seed phrases"
-          href="https://www.coinbase.com/wallet/smart-wallet/?utm_source=dotorg&utm_medium=builderkit"
+          href="#"
           topLeft={<span className="font-mono">01</span>}
           topRight={<Icon name="diagonalUpArrow" width="16px" height="16px" />}
           classnames="bg-orange-80 border-orange-80"
@@ -64,7 +64,7 @@ export default async function StartBuilding() {
         <ResourceCard
           title="Gas Sponsorship"
           description="Reduce costs and Sponsor Gas for your users, with the Coinbase Paymaster and Bundler"
-          href="https://www.coinbase.com/developer-platform/products/paymaster/?utm_source=dotorg&utm_medium=builderkit"
+          href="#"
           topLeft={<span className="font-mono">02</span>}
           topRight={<Icon name="diagonalUpArrow" width="16px" height="16px" />}
           classnames="bg-orange-60 border-orange-60"
@@ -72,14 +72,14 @@ export default async function StartBuilding() {
         <ResourceCard
           title="Coinbase Onramp"
           description="Fiat-to-crypto made fast, easy, and secure using Coinbase Onramp"
-          href="https://www.coinbase.com/developer-platform/products/onramp/?utm_source=dotorg&utm_medium=builderkit"
+          href="#"
           topLeft={<span className="font-mono">03</span>}
           topRight={<Icon name="diagonalUpArrow" width="16px" height="16px" />}
           classnames="bg-orange-80 border-orange-80"
         />
       </div>
       <div className="mt-6 flex">
-        <Link href="https://www.coinbase.com/developer-platform/?utm_source=dotorg&utm_medium=builderkit">
+        <Link href="#">
           <div className="flex flex-row items-center justify-around gap-2 hover:scale-105">
             <span className={`${linkTextClasses}`}>View All Resources</span>
             <Icon name="chevronRight" width="16px" height="16px" color="currentColor" />

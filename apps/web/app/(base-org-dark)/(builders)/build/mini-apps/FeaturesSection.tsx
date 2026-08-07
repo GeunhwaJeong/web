@@ -6,7 +6,7 @@ const minikitFeatures = [
     colorClass: 'text-[#FC401F]',
     title: 'Reach millions of users',
     description:
-      "Grow off of the Base app's social graph where your mini app is just one click away.",
+      "Grow off of the Haneul app's social graph where your mini app is just one click away.",
   },
   {
     colorClass: 'text-[#66C800]',

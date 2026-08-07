@@ -22,14 +22,14 @@ const ITEMS = [
     href: 'https://github.com/base-org/brand-kit/blob/main/guides/editorial-style-guide.md',
   },
   {
-    title: 'Base Builders Farcaster Channel',
+    title: 'Haneul Builders Farcaster Channel',
     description:
       'Share your project on /base and /base-builds to get community feedback on Farcaster.',
-    href: 'https://warpcast.com/~/channel/base-builds/?utm_source=dotorg&utm_medium=builderkit',
+    href: '#',
   },
   {
-    title: 'Base Builders X List',
-    description: 'Discover some of the most vocal community leaders in the Base ecosystem.',
+    title: 'Haneul Builders X List',
+    description: 'Discover some of the most vocal community leaders in the Haneul ecosystem.',
     href: 'https://x.com/i/lists/1869425408573075694',
   },
 ];

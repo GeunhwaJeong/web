@@ -16,7 +16,7 @@ export default async function GetInvolved() {
         <ResourceCard
           title="Join the Discord"
           description="Join our Discord of over 400K+ members and get involved in our Base community"
-          href="https://discord.com/invite/buildonbase"
+          href="#"
           topLeft={<span className="font-mono">01</span>}
           topRight={<Icon name="diagonalUpArrow" width="16px" height="16px" />}
           classnames="bg-teal-80 border-teal-80"
@@ -40,7 +40,7 @@ export default async function GetInvolved() {
         <ResourceCard
           title="Use Apps on Base"
           description="Browse and use projects being built on the Base ecosystem"
-          href="https://www.base.org/ecosystem?utm_source=dotorg&utm_medium=builderkit"
+          href="https://haneul.io"
           topLeft={<span className="font-mono">04</span>}
           topRight={<Icon name="diagonalUpArrow" width="16px" height="16px" />}
           classnames="bg-teal-60 border-teal-60"

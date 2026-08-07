@@ -22,7 +22,7 @@ export function SectionBaseApp() {
       >
         <Image
           src={img.src}
-          alt="Base App"
+          alt="Haneul App"
           width={img.width}
           height={img.height}
           className="mx-auto w-1/3 translate-y-[15%]"
@@ -38,7 +38,7 @@ export function SectionBaseApp() {
 const content = {
   prefix: {
     src: prefix.src,
-    alt: 'Base App',
+    alt: 'Haneul App',
     width: prefix.width,
     height: prefix.height,
   },
@@ -46,7 +46,7 @@ const content = {
   description:
     'An everything app that brings together a social network, apps, payments, and finance. One place to earn, trade, and chat with everyone, everywhere.',
   cta: {
-    label: 'Get Base app',
-    href: 'https://base.app/',
+    label: 'Get Haneul app',
+    href: '#',
   },
 };

@@ -58,7 +58,6 @@ function extendBaseConfig(customConfig = {}, plugins = []) {
 // csp headers
 const isLocalDevelopment = process.env.NODE_ENV === 'development';
 const isE2ETest = process.env.E2E_TEST === 'true';
-const baseXYZDomains = 'https://base.mirror.xyz';
 const greenhouseDomains = 'https://boards.greenhouse.io https://boards-api.greenhouse.io';
 
 const contentSecurityPolicy = {
@@ -67,7 +66,6 @@ const contentSecurityPolicy = {
     "'unsafe-inline'", // NextJS requires 'unsafe-inline'
     "'wasm-unsafe-eval'", // wasm requires 'unsafe-eval'
     isLocalDevelopment ? "'unsafe-eval'" : '',
-    baseXYZDomains,
     'https://fonts.googleapis.com',
     'https://fonts.gstatic.com/',
   ],
@@ -86,15 +84,15 @@ const contentSecurityPolicy = {
     'https://unpkg.com/@lottiefiles/dotlottie-web@0.31.1/dist/dotlottie-player.wasm', // lottie player
     'https://unpkg.com/@lottiefiles/dotlottie-web@0.33.0/dist/dotlottie-player.wasm', // lottie player
   ],
-  'frame-src': ['https://p.datadoghq.com'],
-  'frame-ancestors': ["'self'", baseXYZDomains],
-  'form-action': ["'self'", baseXYZDomains],
+  'frame-src': ["'self'"],
+  'frame-ancestors': ["'self'"],
+  'form-action': ["'self'"],
   'img-src': [
     "'self'",
     'blob:',
     'data:',
-    'https://base.org',
-    'https://*.base.org',
+    'https://haneul.io',
+    'https://*.haneul.io',
     'https://res.cloudinary.com',
   ],
 };
@@ -232,13 +230,7 @@ module.exports = MillionLint.next({
         ];
       },
       async rewrites() {
-        return [
-          {
-            source: '/brand',
-            destination: '/',
-            has: [{ type: 'host', value: 'brand.base.org' }],
-          },
-        ];
+        return [];
       },
       async redirects() {
         return [
@@ -265,27 +257,6 @@ module.exports = MillionLint.next({
           {
             source: '/getstarted',
             destination: '/build',
-            permanent: true,
-          },
-          {
-            source: '/onchainfont',
-            // just so the build doesn't fail in CI
-            destination: process.env.NEXT_PUBLIC_OCS_CREATIVE_DOWNLOAD_URL ?? '/',
-            permanent: false,
-          },
-          {
-            source: '/luma',
-            destination: 'https://luma.com/BaseEvents',
-            permanent: true,
-          },
-          {
-            source: '/registry',
-            destination: 'https://buildonbase.deform.cc/getstarted/',
-            permanent: true,
-          },
-          {
-            source: '/registry-edit',
-            destination: 'https://buildonbase.deform.cc/registry-edit/',
             permanent: true,
           },
           {

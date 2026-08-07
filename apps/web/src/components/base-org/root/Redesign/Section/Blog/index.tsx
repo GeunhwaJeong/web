@@ -11,26 +11,25 @@ import classNames from 'classnames';
 import { levelStyles } from 'apps/web/src/components/base-org/typography/TitleRedesign';
 import { variantStyles } from 'apps/web/src/components/base-org/typography/TextRedesign';
 
-import AnimatedButton from 'apps/web/src/components/Button/AnimatedButton';
 import Text from 'apps/web/src/components/base-org/typography/TextRedesign';
 import { TextVariant } from 'apps/web/src/components/base-org/typography/TextRedesign/types';
 import Link from 'apps/web/src/components/Link';
 import { BlogCardImage } from 'apps/web/src/components/base-org/root/Redesign/Section/Blog/BlogCardImage';
 
 export function SectionBlog() {
+  if (blogPosts.length === 0) {
+    return null;
+  }
+
   return (
     <Section content={content}>
       <BlogCarousel />
-
-      <Link href="https://blog.base.org">
-        <AnimatedButton text="Read more" />
-      </Link>
     </Section>
   );
 }
 
 const content = {
-  title: 'Read the latest from Base',
+  title: 'Read the latest from Haneul',
 };
 
 function BlogCarouselControls({

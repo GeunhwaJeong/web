@@ -151,7 +151,7 @@ export function SidebarLogo() {
       });
 
       // === PHASE 6: CHAR TRANSITIONS (1.2s) ===
-      const charOrder = [2, 0, 3, 1];
+      const charOrder = [2, 0, 4, 1, 5, 3];
       const monoStartDelay = 1.2;
       const charInterval = 0.04;
 
@@ -237,7 +237,7 @@ export function SidebarLogo() {
       const secondSequence: AnimationSequence = [];
 
       // === PHASE 7: LETTER REMOVAL AND GRID SHUFFLE (0s) ===
-      const letterIndices = [1, 3, 0, 2];
+      const letterIndices = [1, 4, 3, 0, 5, 2];
       const letterRemovalTime = 0;
 
       letterIndices.forEach((letterIndex, seqIndex) => {
@@ -460,8 +460,8 @@ function Logo() {
       <div className="square flex aspect-square h-full items-center justify-center rounded-md bg-base-blue opacity-0 transition-colors dark:bg-white" />
 
       {/* mono */}
-      <div className="pointer-events-none absolute bottom-[18%] left-0 flex h-full w-full items-center gap-0.5 font-doto text-[115px] leading-[70%] tracking-tight text-base-blue transition-colors dark:text-white">
-        {'base'.split('').map((char, index) => (
+      <div className="pointer-events-none absolute bottom-[18%] left-0 flex h-full w-full items-center gap-0.5 font-doto text-[76px] leading-[70%] tracking-tight text-base-blue transition-colors dark:text-white">
+        {'haneul'.split('').map((char, index) => (
           // eslint-disable-next-line react/no-array-index-key
           <span key={index} className="charmono relative block select-none font-bold opacity-0">
             {char}
@@ -473,11 +473,13 @@ function Logo() {
       </div>
 
       {/* normal */}
-      <div className="pointer-events-none absolute bottom-3 left-0 flex h-full w-full select-none items-center font-sans text-[110px] font-medium leading-[70%] tracking-[-0.01em] text-base-blue transition-colors duration-150 dark:text-white">
-        <span className="char block opacity-0">b</span>
+      <div className="pointer-events-none absolute bottom-3 left-0 flex h-full w-full select-none items-center font-sans text-[72px] font-medium leading-[70%] tracking-[-0.01em] text-base-blue transition-colors duration-150 dark:text-white">
+        <span className="char block opacity-0">h</span>
         <span className="char block opacity-0">a</span>
-        <span className="char block opacity-0">s</span>
+        <span className="char block opacity-0">n</span>
         <span className="char block opacity-0">e</span>
+        <span className="char block opacity-0">u</span>
+        <span className="char block opacity-0">l</span>
       </div>
     </div>
   );
@@ -486,17 +488,14 @@ function Logo() {
 function LogoSVG(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
-      width="664"
+      width="218"
       height="218"
-      viewBox="0 0 664 218"
+      viewBox="0 0 218 218"
       fill="none"
       {...props}
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        d="M0.786503 5.13191C0 6.74052 0 8.83171 0 13.0141V204.98C0 209.162 0 211.253 0.786503 212.862C1.53955 214.402 2.78253 215.648 4.31969 216.402C5.92514 217.19 8.01222 217.19 12.1864 217.19H142.072C146.246 217.19 148.333 217.19 149.938 216.402C151.475 215.648 152.718 214.402 153.471 212.862C154.258 211.253 154.258 209.162 154.258 204.98V74.8388C154.258 70.6564 154.258 68.5652 153.471 66.9566C152.718 65.4164 151.475 64.171 149.938 63.4164C148.333 62.6284 146.246 62.6284 142.072 62.6284H73.8896C69.7154 62.6284 67.6283 62.6284 66.0229 61.8403C64.4857 61.0858 63.2427 59.8404 62.4897 58.3002C61.7032 56.6916 61.7032 54.6004 61.7032 50.418V13.0141C61.7032 8.83171 61.7032 6.74052 60.9167 5.13191C60.1636 3.59172 58.9206 2.34629 57.3835 1.59176C55.778 0.803711 53.691 0.803711 49.5168 0.803711H12.1864C8.01222 0.803711 5.92514 0.803711 4.31969 1.59176C2.78253 2.34629 1.53955 3.59172 0.786503 5.13191Z"
-        fill="currentColor"
-      />
+      <rect width="218" height="218" rx="14" fill="currentColor" />
     </svg>
   );
 }

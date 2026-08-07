@@ -18,13 +18,13 @@ const ITEMS = [
   {
     title: 'Join the Discord',
     description: 'Apply to join the builder network to access community forums and programs.',
-    href: 'https://discord.com/invite/buildonbase',
+    href: '#',
   },
   {
-    title: 'Base Country Leads',
+    title: 'Haneul Country Leads',
     description:
-      'Country Leads cultivate the local Base community and provide support to builders.',
-    href: 'https://docs.base.org/get-started/country-leads-and-ambassadors#base-country-leads',
+      'Country Leads cultivate the local Haneul community and provide support to builders.',
+    href: 'https://docs.haneul.io',
   },
   {
     title: 'Host a virtual event',
@@ -32,8 +32,8 @@ const ITEMS = [
     href: 'https://basedvirtualevents.deform.cc/',
   },
   // {
-  //   title: 'Use apps on Base',
-  //   description: 'Browse and use projects being built on the Base ecosystem.',
-  //   href: 'https://www.base.org/ecosystem?utm_source=dotorg&utm_medium=builderkit',
+  //   title: 'Use apps on Haneul',
+  //   description: 'Browse and use projects being built on the Haneul ecosystem.',
+  //   href: 'https://haneul.io',
   // },
 ];

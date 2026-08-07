@@ -22,7 +22,7 @@ export function SectionMetrics() {
 const content = {
   title: 'Metrics that matter',
   description:
-    'Fast, open, and built to scale. The Base economy is growing every day, fueled by real builders.',
+    'Fast, open, and built to scale. The Haneul economy is growing every day, fueled by real builders.',
 };
 
 function MetricsGrid() {
@@ -46,13 +46,13 @@ function MetricsGrid() {
       />
       <MetricCard
         title="Median Transaction fee"
-        description="Typical fee per transaction on Base."
+        description="Typical fee per transaction on Haneul."
         icon={Icons.median}
         value="08"
       />
       <MetricCard
         title="Assets on Platform"
-        description="Unique assets available on Base."
+        description="Unique assets available on Haneul."
         icon={Icons.platform}
         value="23,489"
       />

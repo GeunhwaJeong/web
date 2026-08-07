@@ -15,8 +15,8 @@ const useCases = [
     cardNumber: 1,
     title: "Kickstart your app's growth",
     description:
-      'Access millions of active users and grow your app by publishing it on the Base App. ',
-    href: 'https://docs.base.org/cookbook/onchain-social',
+      'Access millions of active users and grow your app by publishing it on the Haneul App. ',
+    href: 'https://docs.haneul.io',
     content: (
       <div className="flex flex-1 items-center justify-center">
         <AnimatedGrowthChart />
@@ -27,8 +27,8 @@ const useCases = [
     cardNumber: 2,
     title: 'Onboard everyone',
     description:
-      'Let users sign up and sign in with Base Account — the universal account for the onchain world.',
-    href: 'https://docs.base.org/cookbook/onboard-any-user',
+      'Let users sign up and sign in with Haneul Account — the universal account for the onchain world.',
+    href: 'https://docs.haneul.io',
     content: <StaticSiwbCodeblock />,
   },
   {
@@ -36,7 +36,7 @@ const useCases = [
     title: 'Accept crypto payments',
     description:
       'Accept crypto payments in your apps and ecommerce stores. Available for every business and live for Shopify merchants.',
-    href: 'https://docs.base.org/cookbook/accept-crypto-payments',
+    href: 'https://docs.haneul.io',
     content: (
       <Image
         src="/images/base-pay.png"
@@ -51,7 +51,7 @@ const useCases = [
     cardNumber: 4,
     title: 'Integrate DeFi',
     description: 'Unlock the power of DeFi protocols and services directly in your app. ',
-    href: 'https://docs.base.org/cookbook/defi-your-app',
+    href: 'https://docs.haneul.io',
     content: (
       <div className="flex flex-1 items-center justify-center">
         <Image alt="Integrate DeFi" src="/images/integrate-defi.svg" width={402} height={269} />
@@ -62,15 +62,15 @@ const useCases = [
     cardNumber: 5,
     title: 'Launch AI agents',
     description: 'Deploy AI agents that can interact with onchain data and smart contracts.',
-    href: 'https://docs.base.org/cookbook/launch-ai-agents',
+    href: 'https://docs.haneul.io',
     content: <AnimatedBaseAgent className="!my-0 w-full font-sans md:w-full" />,
   },
   {
     cardNumber: 6,
-    title: 'Launch a dedicated chain on Base',
+    title: 'Launch a dedicated chain on Haneul',
     description:
       'Scale your app with dedicated blockspace and customized settings built for your users.',
-    href: 'https://docs.base.org/cookbook/deploy-a-chain',
+    href: 'https://docs.haneul.io',
     content: (
       <div className="flex flex-1 items-center justify-center">
         <LaunchAChainSteps />

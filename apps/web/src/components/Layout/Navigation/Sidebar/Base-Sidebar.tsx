@@ -176,6 +176,10 @@ export function BaseNavigation({ isMobile = false }: { isMobile?: boolean }) {
                           <Text variant={TextVariant.CTALabelSm}>{route.label}</Text>
                           <ChevronRightIcon className="h-3 w-3 text-[#B1B7C3] dark:text-[#4E483C] [&_path]:transition-colors [&_path]:duration-200 group-hover:[&_path]:fill-black group-hover:dark:[&_path]:fill-white" />
                         </button>
+                      ) : route.disabled ? (
+                        <span className="w-full rounded-lg p-2.5 leading-[114%] text-black dark:text-white">
+                          <Text variant={TextVariant.CTALabelSm}>{route.label}</Text>
+                        </span>
                       ) : (
                         <Link
                           href={route.href}
@@ -363,9 +367,7 @@ export function BaseNavigation({ isMobile = false }: { isMobile?: boolean }) {
             variant={ButtonVariants.Secondary}
             size={ButtonSizes.Small}
           >
-            <Link href="https://base.app" className="group" target="_blank">
-              Get Base App
-            </Link>
+            <span className="group">Get Haneul App</span>
           </Button>
           <Button
             type="button"
@@ -375,7 +377,7 @@ export function BaseNavigation({ isMobile = false }: { isMobile?: boolean }) {
             size={ButtonSizes.Small}
           >
             <Link href="/build" className="group">
-              Build on Base
+              Build on Haneul
             </Link>
           </Button>
         </div>
@@ -397,7 +399,7 @@ export function BaseNavigation({ isMobile = false }: { isMobile?: boolean }) {
               className="w-full"
             >
               <Link
-                href="https://docs.base.org/get-started/base"
+                href="https://docs.haneul.io"
                 target="_blank"
                 rel="noreferrer noopener"
               >
@@ -410,7 +412,7 @@ export function BaseNavigation({ isMobile = false }: { isMobile?: boolean }) {
               asChild
               className="w-full"
             >
-              <Link href="https://www.base.dev/" target="_blank" rel="noreferrer noopener">
+              <Link href="#" target="_blank" rel="noreferrer noopener">
                 Start building
               </Link>
             </Button>

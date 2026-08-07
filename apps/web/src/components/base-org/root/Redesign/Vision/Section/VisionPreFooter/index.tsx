@@ -208,18 +208,18 @@ export function VisionPreFooter() {
         </div>
       </div>
       <div className="z-20 col-span-full flex flex-col gap-10 lg:col-span-4 lg:col-start-5 lg:justify-center">
-        <Title level={TitleLevel.H4Regular}>Base is for everyone</Title>
+        <Title level={TitleLevel.H4Regular}>Haneul is for everyone</Title>
         <Title level={TitleLevel.H6Regular}>
-          There&apos;s a place for you on Base. Let&apos;s build a better internet, together.
+          There&apos;s a place for you on Haneul. Let&apos;s build a better internet, together.
         </Title>
         <div className="pointer-events-auto col-span-full flex w-full items-center gap-2">
           <Button className="w-full" asChild>
-            <Link href="https://base.app" target="_blank">
-              Download Base App
+            <Link href="#" target="_blank">
+              Download Haneul App
             </Link>
           </Button>
           <Button className="w-full" variant={ButtonVariants.Secondary} asChild>
-            <Link href="/build">Build on Base</Link>
+            <Link href="/build">Build on Haneul</Link>
           </Button>
         </div>
       </div>
