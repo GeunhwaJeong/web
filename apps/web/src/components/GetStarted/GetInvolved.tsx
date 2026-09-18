@@ -40,7 +40,7 @@ export default async function GetInvolved() {
         <ResourceCard
           title="Use Apps on Base"
           description="Browse and use projects being built on the Base ecosystem"
-          href="https://haneul.io"
+          href="https://haneulfoundation.org"
           topLeft={<span className="font-mono">04</span>}
           topRight={<Icon name="diagonalUpArrow" width="16px" height="16px" />}
           classnames="bg-teal-60 border-teal-60"

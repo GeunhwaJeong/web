@@ -38,7 +38,7 @@ export const DEFAULT_ROUTES: DefaultRoute[] = [
       },
     ],
     appendix: [
-      { label: 'Docs', href: 'https://docs.haneul.io/', newTab: true },
+      { label: 'Docs', href: 'https://docs.haneulfoundation.org/', newTab: true },
       { label: 'GitHub', href: 'https://github.com/GeunhwaJeong/haneul', newTab: true },
     ],
   },

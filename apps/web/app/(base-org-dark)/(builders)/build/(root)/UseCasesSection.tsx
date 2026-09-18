@@ -16,7 +16,7 @@ const useCases = [
     title: "Kickstart your app's growth",
     description:
       'Access millions of active users and grow your app by publishing it on the Haneul App. ',
-    href: 'https://docs.haneul.io',
+    href: 'https://docs.haneulfoundation.org',
     content: (
       <div className="flex flex-1 items-center justify-center">
         <AnimatedGrowthChart />
@@ -28,7 +28,7 @@ const useCases = [
     title: 'Onboard everyone',
     description:
       'Let users sign up and sign in with Haneul Account — the universal account for the onchain world.',
-    href: 'https://docs.haneul.io',
+    href: 'https://docs.haneulfoundation.org',
     content: <StaticSiwbCodeblock />,
   },
   {
@@ -36,7 +36,7 @@ const useCases = [
     title: 'Accept crypto payments',
     description:
       'Accept crypto payments in your apps and ecommerce stores. Available for every business and live for Shopify merchants.',
-    href: 'https://docs.haneul.io',
+    href: 'https://docs.haneulfoundation.org',
     content: (
       <Image
         src="/images/base-pay.png"
@@ -51,7 +51,7 @@ const useCases = [
     cardNumber: 4,
     title: 'Integrate DeFi',
     description: 'Unlock the power of DeFi protocols and services directly in your app. ',
-    href: 'https://docs.haneul.io',
+    href: 'https://docs.haneulfoundation.org',
     content: (
       <div className="flex flex-1 items-center justify-center">
         <Image alt="Integrate DeFi" src="/images/integrate-defi.svg" width={402} height={269} />
@@ -62,7 +62,7 @@ const useCases = [
     cardNumber: 5,
     title: 'Launch AI agents',
     description: 'Deploy AI agents that can interact with onchain data and smart contracts.',
-    href: 'https://docs.haneul.io',
+    href: 'https://docs.haneulfoundation.org',
     content: <AnimatedBaseAgent className="!my-0 w-full font-sans md:w-full" />,
   },
   {
@@ -70,7 +70,7 @@ const useCases = [
     title: 'Launch a dedicated chain on Haneul',
     description:
       'Scale your app with dedicated blockspace and customized settings built for your users.',
-    href: 'https://docs.haneul.io',
+    href: 'https://docs.haneulfoundation.org',
     content: (
       <div className="flex flex-1 items-center justify-center">
         <LaunchAChainSteps />

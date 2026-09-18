@@ -7,7 +7,7 @@ import { WebGLCanvas } from 'apps/web/src/components/WebGL/WebGLCanvas';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://haneul.io'),
+  metadataBase: new URL('https://haneulfoundation.org'),
   title: `Haneul | Jobs`,
   openGraph: {
     title: `Haneul | Jobs`,

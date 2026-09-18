@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    metadataBase: new URL('https://haneul.io'),
+    metadataBase: new URL('https://haneulfoundation.org'),
     title: `Base`,
     description:
         'Live network statistics for Haneul.',

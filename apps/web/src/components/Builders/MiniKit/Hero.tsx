@@ -10,7 +10,7 @@ import { HeaderAnimation } from 'apps/web/src/components/Builders/MiniKit/Header
 import minikit from 'apps/web/src/components/Builders/MiniKit/minikit.svg';
 import { Icon } from 'apps/web/src/components/Icon/Icon';
 
-export const GET_STARTED_URL = 'https://docs.haneul.io';
+export const GET_STARTED_URL = 'https://docs.haneulfoundation.org';
 const MINIKIT_COMMAND = 'npx create-onchain --mini';
 
 export function Hero() {

@@ -18,7 +18,7 @@ export default function AcceptBasePay() {
             our SDK.
           </Title>
           <Link
-            href="https://docs.haneul.io"
+            href="https://docs.haneulfoundation.org"
             target="_blank"
             rel="noopener noreferrer"
           >

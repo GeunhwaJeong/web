@@ -48,7 +48,7 @@ export default function Hero() {
               className="w-full pointer-events-auto"
             >
               <Link
-                href="https://docs.haneul.io"
+                href="https://docs.haneulfoundation.org"
                 target="_blank"
                 rel="noopener noreferrer"
               >

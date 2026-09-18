@@ -71,7 +71,7 @@ export default function FAQsPage() {
           <p className="text-gray-600 mt-2">
             Visit our{' '}
             <a
-              href="https://docs.haneul.io"
+              href="https://docs.haneulfoundation.org"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-800 text-blue-600 underline"

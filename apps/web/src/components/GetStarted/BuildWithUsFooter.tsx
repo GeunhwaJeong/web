@@ -45,7 +45,7 @@ export default async function BuildWithUsFooter() {
             Virtual Events
           </ButtonWithLinkAndEventLogging>
           <ButtonWithLinkAndEventLogging
-            href="https://docs.haneul.io"
+            href="https://docs.haneulfoundation.org"
             eventName="start_building_with_us_view_docs"
             target="_blank"
             rel="noreferrer noopener"

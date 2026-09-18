@@ -19,7 +19,7 @@ import Title from 'apps/web/src/components/base-org/typography/TitleRedesign';
 import { TitleLevel } from 'apps/web/src/components/base-org/typography/TitleRedesign/types';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://haneul.io'),
+  metadataBase: new URL('https://haneulfoundation.org'),
   title: `Haneul | Builders`,
   openGraph: {
     title: `Haneul | Builders`,
@@ -148,7 +148,7 @@ export default function Builders() {
               size={ButtonSizes.Small}
               asChild
             >
-              <Link href="https://docs.haneul.io" target="_blank" rel="noopener noreferrer">
+              <Link href="https://docs.haneulfoundation.org" target="_blank" rel="noopener noreferrer">
                 Start building
               </Link>
             </Button>

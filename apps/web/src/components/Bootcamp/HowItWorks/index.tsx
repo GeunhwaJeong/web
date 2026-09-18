@@ -38,7 +38,7 @@ const featureItems = [
           <a
             className="underline"
             target="_blank"
-            href="https://docs.haneul.io"
+            href="https://docs.haneulfoundation.org"
             rel="noreferrer"
           >
             Base Learn

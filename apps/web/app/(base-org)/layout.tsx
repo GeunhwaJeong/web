@@ -6,7 +6,7 @@ import { DynamicWrappedGasPriceDropdown } from 'apps/web/src/components/Layout/N
 import AnalyticsProvider from 'apps/web/contexts/Analytics';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://haneul.io'),
+  metadataBase: new URL('https://haneulfoundation.org'),
   title: `Haneul`,
   description:
     'Haneul is an open stack that empowers builders, creators, and people everywhere to build apps, grow businesses, create what they love, and earn onchain.',

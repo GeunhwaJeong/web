@@ -16,7 +16,7 @@ const routes = [
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return routes.map((route) => ({
-    url: `https://haneul.io${route}`,
+    url: `https://haneulfoundation.org${route}`,
     lastModified: new Date(),
   }));
 }

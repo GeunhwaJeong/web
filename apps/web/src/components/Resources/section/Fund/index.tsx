@@ -25,7 +25,7 @@ const ITEMS = [
     title: 'Haneul Builder Rewards',
     description:
       'The Haneul ecosystem offers multiple funding pathways designed specifically for builders at every stage, from weekend hacks to full-scale businesses.',
-    href: 'https://docs.haneul.io',
+    href: 'https://docs.haneulfoundation.org',
   },
   {
     title: 'Paymaster Gas Credits',

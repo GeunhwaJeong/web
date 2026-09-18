@@ -24,7 +24,7 @@ const ITEMS = [
     title: 'Haneul Country Leads',
     description:
       'Country Leads cultivate the local Haneul community and provide support to builders.',
-    href: 'https://docs.haneul.io',
+    href: 'https://docs.haneulfoundation.org',
   },
   {
     title: 'Host a virtual event',
@@ -34,6 +34,6 @@ const ITEMS = [
   // {
   //   title: 'Use apps on Haneul',
   //   description: 'Browse and use projects being built on the Haneul ecosystem.',
-  //   href: 'https://haneul.io',
+  //   href: 'https://haneulfoundation.org',
   // },
 ];
