@@ -236,7 +236,7 @@ export default function ResourcesBuildWithUs() {
           <Button className="w-full lg:max-w-52">
             <Link
               target="_blank"
-              href="https://docs.haneul.io"
+              href="https://docs.haneulfoundation.org"
             >
               View our docs
             </Link>

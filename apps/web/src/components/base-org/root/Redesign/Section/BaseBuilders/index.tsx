@@ -28,6 +28,6 @@ const content = {
     'Haneul gives builders the tools they need to build, grow, and earn from their apps, at every stage.',
   cta: {
     label: 'Start Building',
-    href: 'https://haneul.io',
+    href: 'https://haneulfoundation.org',
   },
 };

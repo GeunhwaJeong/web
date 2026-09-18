@@ -19,7 +19,7 @@ export const shouldUseNextImage = (src: string | StaticImageData): boolean => {
   const isPublicImage = absoluteImageSource.startsWith(PUBLIC_IMAGE_FOLDER);
   if (isPublicImage) return true;
 
-  // Any other image, don't load via haneul.io / nextjs image proxy
+  // Any other image, don't load via haneulfoundation.org / nextjs image proxy
   return false;
 };
 

@@ -12,7 +12,7 @@ import CopyToClipboard from 'react-copy-to-clipboard';
 import cx from 'classnames';
 
 const copyTextMinikit = 'npx create-onchain@latest --mini';
-const miniDocsUrl = 'https://docs.haneul.io';
+const miniDocsUrl = 'https://docs.haneulfoundation.org';
 
 export function ExploreDocsButton({
   ctaLabel = 'Start building',

@@ -56,7 +56,7 @@ const ITEMS01 = [
   {
     title: 'Learn to build onchain',
     description: 'Become an onchain developer with our comprehensive smart contract curriculum.',
-    href: 'https://docs.haneul.io',
+    href: 'https://docs.haneulfoundation.org',
   },
   {
     title: 'Grow your app',
@@ -75,7 +75,7 @@ const ITEMS02 = [
     title: 'Haneul Services Hub',
     description:
       'Exclusive discounts on software and services that help projects ship faster, scale growth and build on Haneul.',
-    href: 'https://docs.haneul.io',
+    href: 'https://docs.haneulfoundation.org',
   },
 ];
 const ITEMS03 = [
@@ -89,6 +89,6 @@ const ITEMS03 = [
     title: 'Get Mentorship',
     description:
       'Connect with experienced builders and industry leaders to accelerate your journey on Haneul.',
-    href: 'https://docs.haneul.io',
+    href: 'https://docs.haneulfoundation.org',
   },
 ];

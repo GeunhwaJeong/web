@@ -50,7 +50,7 @@ const LINK_SECTIONS = [
     title: 'Builders',
     links: [
       { label: 'Tools', href: '/build' },
-      { label: 'Docs', href: 'https://docs.haneul.io', newTab: true },
+      { label: 'Docs', href: 'https://docs.haneulfoundation.org', newTab: true },
     ],
   },
   {

@@ -11,7 +11,7 @@ import { BuildersContainer } from 'apps/web/app/(base-org-dark)/(builders)/Build
 import minikitHero from './minikit-hero.png';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://haneul.io'),
+  metadataBase: new URL('https://haneulfoundation.org'),
   title: `Haneul | Mini Apps`,
   openGraph: {
     title: `Haneul | Mini Apps`,

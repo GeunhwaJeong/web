@@ -18,7 +18,7 @@ export default async function StartBuilding() {
         <ResourceCard
           title="Learn to Build Onchain"
           description="Become an onchain developer with our comprehensive smart contract curriculum"
-          href="https://docs.haneul.io"
+          href="https://docs.haneulfoundation.org"
           topLeft={<span className="font-mono">01</span>}
           topRight={<Icon name="diagonalUpArrow" width="16px" height="16px" />}
           classnames="bg-orange-80 border-orange-80"
