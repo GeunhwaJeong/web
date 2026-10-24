@@ -91,7 +91,7 @@ const ITEMS = [
   },
   {
     title: 'Create your profile',
-    href: 'https://haneulfoundation.org',
+    href: 'https://haneul.io',
     description: 'Claim a basename and create your based profile to connect with other builders.',
   },
   {

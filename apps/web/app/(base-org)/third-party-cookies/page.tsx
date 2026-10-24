@@ -2,7 +2,7 @@ import Container from 'apps/web/src/components/base-org/Container';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://haneulfoundation.org'),
+  metadataBase: new URL('https://haneul.io'),
   title: `Haneul | Third Party Cookies`,
   openGraph: {
     title: `Haneul | Third Party Cookies`,
