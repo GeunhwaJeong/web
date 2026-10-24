@@ -91,8 +91,8 @@ const contentSecurityPolicy = {
     "'self'",
     'blob:',
     'data:',
-    'https://haneulfoundation.org',
-    'https://*.haneulfoundation.org',
+    'https://haneul.io',
+    'https://*.haneul.io',
     'https://res.cloudinary.com',
   ],
 };

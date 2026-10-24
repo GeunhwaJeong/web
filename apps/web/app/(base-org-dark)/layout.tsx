@@ -6,7 +6,7 @@ import { DynamicWrappedGasPriceDropdown } from 'apps/web/src/components/Layout/N
 import AnalyticsProvider from 'apps/web/contexts/Analytics';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://haneulfoundation.org'),
+  metadataBase: new URL('https://haneul.io'),
   title: `Haneul`,
   description:
     'Haneul is a secure, low-cost, builder-friendly Ethereum L2 built to bring the next billion users onchain.',

@@ -399,7 +399,7 @@ export function BaseNavigation({ isMobile = false }: { isMobile?: boolean }) {
               className="w-full"
             >
               <Link
-                href="https://docs.haneulfoundation.org"
+                href="https://docs.haneul.io"
                 target="_blank"
                 rel="noreferrer noopener"
               >
